@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:style="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/TotalFontStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:text="Donate to PM Cares"
+            android:textAlignment="center"
+            android:textColor="@color/colorTotalRecovered"></TextView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Account name : PM Cares\nAccount number : 2121PM20202\nIFSC Code : SBIN0000691\nUPI : pmcares@sbi\nBank : State bank of India,New Delhi main branch"
+           style="@style/LabelFontStyle"
+           android:textSize="25dp"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="75dp"
+           android:textColor="@color/colorTotalRecovered"
+           ></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STAY SAFE , STAY HOME!!"
+            style="@style/TotalFontStyle"
+            android:textSize="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:textColor="@color/colorTotalConfirmed"
+            ></TextView>
+
+
+</RelativeLayout>

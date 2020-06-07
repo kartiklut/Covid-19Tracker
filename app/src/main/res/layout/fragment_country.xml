@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/linearlayoutTotalCountries"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="180 Countries"
+            style="@style/TotalFontStyle"
+            android:textSize="24sp"
+            android:id="@+id/tvTotalCountry"
+            android:textColor="#fff"
+            ></TextView>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutTotalCountries"
+        android:id="@+id/rvCovidCountry"
+        tools:listitem="@layout/item_list_covid_country"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_circular_country"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        ></ProgressBar>
+
+
+</RelativeLayout>
